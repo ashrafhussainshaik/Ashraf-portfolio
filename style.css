@@ -52,10 +52,18 @@ a {
 }
 
 a:hover{
-    color: gray;
+    color: rgb(214, 47, 9);
+    font-weight: 700;
     text-decoration: underline;
     text-underline-offset: 1rem;
+    text-underline-color:black;
     text-decoration-color: rgb(181, 181, 181);
+    
+    /*bg effect */
+    transform: scale(1.15);
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #d33232,
+                 0 0 30px #f4f1ed;
 }
 
 .logo{
@@ -64,6 +72,7 @@ a:hover{
 
 .logo:hover{
     cursor: default;
+    
 }
 
 /*HAMBURGER-MENU*/
