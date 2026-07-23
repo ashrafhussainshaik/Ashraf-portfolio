@@ -24,22 +24,46 @@
     <nav id="hamburger-nav">
         <div class="logo">Ashraf</div>
         <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toogleMenu()">
+            <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
             <div class="menu-links">
-                 <li><a href="#about" onclick="toogleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toogleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toogleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toogleMenu()">Contact</a></li>
+                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
 
     </nav >
+    <section id ="profile">
+        <div class="section__pic-container">
+        <img src="./Assets/profile-pic.png" alt="John Pic">
+        </div>
+    <div class="section__text">
+        <p class="section__text__p1">Hello, I am</p>
+        <h1 class="title">Ashraf</h1>
+        <p class="section__text__p2"> data engineer</p>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./Assets/resume-example.pdf')">
+                download cv
+            </button>
+             <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                contact info
+            </button>
+        </div>
+        <div id="social-container">
+            <img src="./Assets/linkedin.png" alt="My linkedin page"
+                 class="icon" onclick="location.href='https://www.linkedin.com/'"> <!--linkedin logo*/-->
+
+            <img src="./Assets/github.png" alt="My Github page"
+                 class="icon" onclick="location.href='https://www.github.com/'">
+        </div>
+    </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
 
-<!--dev branch created. testing....-->
